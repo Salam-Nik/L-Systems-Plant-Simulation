@@ -149,7 +149,7 @@ the value of the first parameter affects the turtle's state. If the
 symbol is not followed by any parameter, default values specified
 outside the L-system are used. The following list specifies the basic
 set of symbols interpreted by the turtle.
-![image](https://media.githubusercontent.com/media/Salam-Nik/L-Systems-Plant-Simulation/main/images/image.png?token=A4C6WWCXE5TWUMDIB6NX24LFWV44Y)
+![image](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/images/image.png)
 
 a\) Controlling the turtle in three dimensions   b) Example of the turtle
 interpretation of a string
