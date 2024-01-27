@@ -151,7 +151,7 @@ the value of the first parameter affects the turtle's state. If the
 symbol is not followed by any parameter, default values specified
 outside the L-system are used. The following list specifies the basic
 set of symbols interpreted by the turtle.
-![image](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/images/image.png)
+![image](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/image.png)
 
 a\) Controlling the turtle in three dimensions   b) Example of the turtle
 interpretation of a string
@@ -277,6 +277,7 @@ To interact with the L-System simulation via the command line, follow these step
     generate
     ```
 
+![](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example.mp4)
 ### Example Images
 
 Here are visual examples of L-System plant simulations generated using Turtle Graphics in Unity:
@@ -285,7 +286,7 @@ Here are visual examples of L-System plant simulations generated using Turtle Gr
    -             'X'=> "[F[-X+F[+FX]][*-X+F[+FX]][/-X+F[+FX]-X]]" ,
             'F'=> "FF" 
 
-2. ![Example Image 2](insert_image_url_2)
+2. ![Example Image 2](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example2.png)
    -              'X'=> "[FX[+F[-FX]FX][-F-FXFX]]" ,
              'F'=> "FF" 
 
