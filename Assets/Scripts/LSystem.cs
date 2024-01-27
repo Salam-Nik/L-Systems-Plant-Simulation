@@ -22,7 +22,6 @@ public class LSystem : MonoBehaviour
     public float angle = 30f;
     public float width = 1f;
     public float length = 2f;
-    public float variance = 10f;
     public bool hasTreeChanged = false;
     public GameObject Tree = null;
 
@@ -30,9 +29,8 @@ public class LSystem : MonoBehaviour
     [SerializeField] private GameObject branch;
     [SerializeField] private GameObject leaf;
     [SerializeField] private State state;
-    [SerializeField] private const string axiom = "X";
-    [SerializeField]
-    private List<LSystemRule> rules;
+    [SerializeField] private string axiom = "X";
+    [SerializeField] private List<LSystemRule> rules;
 
     public List<LSystemRule> Rules => rules;
     private Stack<TransformInfo> transformStack;
@@ -64,7 +62,7 @@ public class LSystem : MonoBehaviour
     Generate();
     }
 
-    private void Update()
+    public void UpdateTree()
     {
         if (state.hasGenerateBeenPressed || Input.GetKeyDown(KeyCode.G))
         {
@@ -72,13 +70,6 @@ public class LSystem : MonoBehaviour
             Generate();
         }
 
-        if (state.hasResetBeenPressed || Input.GetKeyDown(KeyCode.R))
-        {
-            ResetTreeValues();
-            state.hasResetBeenPressed = false;
-            state.Start();
-            Generate();
-        }
 
         if (titleLastFrame != title)
         {
@@ -95,19 +86,7 @@ public class LSystem : MonoBehaviour
             titleLastFrame = title;
         }
 
-        if (iterationsLastFrame != iterations)
-        {
-            if (iterations >= 6)
-            {
-                state.warning.gameObject.SetActive(true);
-                StopCoroutine("TextFade");
-                StartCoroutine("TextFade");
-            }
-            else
-            {
-                state.warning.gameObject.SetActive(false);
-            }
-        }
+
 
         if (iterationsLastFrame != iterations ||
                 angleLastFrame  != angle ||
@@ -118,6 +97,44 @@ public class LSystem : MonoBehaviour
             Generate();
         }
 
+    }
+
+    public void Reset()
+    {
+
+            ResetTreeValues();
+            state.hasResetBeenPressed = false;
+            Generate();
+   
+    }
+    public void SetIterations(int iter)
+    {
+        iterations = iter;
+        Generate();
+    }
+    public void SetAngle(float newVal)
+    {
+        angle = newVal;
+        Generate();
+    }
+    public void SetWidths(float newVal)
+    {
+        width = newVal;
+        Generate();
+    }
+    public void SetLength(float newVal)
+    {
+        length = newVal;
+        Generate();
+    }
+    public void SetAxiom(string newVal)
+    {
+        axiom = newVal;
+        Generate();
+    }
+    public void AddRule(char key1, string value1)
+    {
+        rules.Add(new LSystemRule{ key = key1, value = value1 });
     }
 
     public void Generate()
@@ -221,6 +238,5 @@ public class LSystem : MonoBehaviour
         angle = 30f;
         width = 1f;
         length = 2f;
-        variance = 10f;
     }
 }

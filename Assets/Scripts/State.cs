@@ -12,13 +12,6 @@ public class State : MonoBehaviour
 
     [SerializeField] private LSystem TreeSpawner;
 
-    public void Start()
-    {
-
-        rotation.gameObject.SetActive(false);
-        warning.gameObject.SetActive(false);
-    }
-
     public void TitleUp()
     {
         if (TreeSpawner.title < LSystem.NUM_OF_TREES)
