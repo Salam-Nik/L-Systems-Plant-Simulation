@@ -136,19 +136,10 @@ $$\overrightarrow{H} \times \overrightarrow{L} = \overrightarrow{U}$$
 
 . Rotations of the turtle are expressed by the equation:
 
+$$ 
+(\overrightarrow{H'}, \overrightarrow{L'}, \overrightarrow{U'}) = (\overrightarrow{H}, \overrightarrow{L}, \overrightarrow{U})
 $$
-\begin{bmatrix}
-\overrightarrow{H'} \\
-\overrightarrow{L'} \\
-\overrightarrow{U'}
-\end{bmatrix}
-=
-\begin{bmatrix}
-\overrightarrow{H} \\
-\overrightarrow{L} \\
-\overrightarrow{U}
-\end{bmatrix}
-$$
+
 
 
 where R is a 3 $\times$ 3 rotation matrix . Changes in the turtle's
@@ -159,7 +150,7 @@ symbol is not followed by any parameter, default values specified
 outside the L-system are used. The following list specifies the basic
 set of symbols interpreted by the turtle.
 
-![image](L-Systems-Plant-Simulation/image.png)
+![image](L-Systems-Plant-Simulation/images/image.png)
 
 a\) Controlling the turtle in three dimensions   b) Example of the turtle
 interpretation of a string
