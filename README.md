@@ -1,4 +1,15 @@
 # L-Systems-Plant-Simulation
+***Table of Contents:***
+
+1. [What is L-system?](#what-is-l-system)
+2. [Context-Free L-system](#context-free-l-system)
+3. [Chomsky Normal Form](#chomsky-normal-form)
+4. [Difference between L-system and Chomsky Normal Form](#difference-between-l-system-and-chomsky-normal-form)
+5. [Turtle Graphics](#turtle-graphics)
+    - [Explanation of how Turtle Graphics can simulate plant growth](#explanation-of-how-turtle-graphics-can-simulate-plant-growth)
+    - [Examples of plant growth simulation](#examples-of-plant-growth-simulation)
+6. [Basic Turtle Graphics Symbols and Functions](#basic-turtle-graphics-symbols-and-functions)
+
 
 ***Table of content:***
 
@@ -175,3 +186,51 @@ interpretation of a string
 | ,          | index of the color map to n, or decrease the value of the current index by the default colour decrement if no parameter is given |
 | A,B,C,D,...| placeholders, used to nest other symbols |
 
+### Employing L-System Code in Unity
+
+To implement the provided L-System code in Unity, follow these steps:
+
+#### 1. Attach the Script to GameObject
+
+- Attach the `LSystem` script to a GameObject in your Unity scene.
+
+#### 2. Adjust Parameters in the Unity Inspector
+
+- **Iterations:** Set the number of iterations for the L-System.
+- **Angle:** Adjust the rotation angle for turns in the L-System.
+- **Width:** Modify the width of branches or lines in the L-System.
+- **Length:** Change the length of branches or the step length in the L-System.
+- **Axiom:** Define the initial axiom for the L-System.
+- **Rules:** Add or modify rules for the L-System using the Inspector.
+
+#### 3. Generate L-System
+
+- Click the "Generate" button in the Unity Inspector or trigger the generation through code when needed.
+- The L-System will be created based on the specified parameters and rules.
+
+#### 4. Update and Reset
+
+- The L-System can be updated dynamically by changing parameters like iterations, angle, width, and length.
+- Use the "UpdateTree" method to dynamically update the L-System during runtime.
+- To reset the L-System to default values, use the "Reset" method.
+
+#### Example Usage:
+
+```csharp
+// Example of modifying L-System parameters during runtime
+void Update()
+{
+    // Dynamically adjust parameters
+    lSystem.SetIterations(5);
+    lSystem.SetAngle(25f);
+    lSystem.SetWidths(0.8f);
+    lSystem.SetLength(1.5f);
+
+    // Update the L-System
+    lSystem.UpdateTree();
+}
+```
+
+This code demonstrates how to interact with the L-System during runtime, changing its parameters and updating the generated structure.
+
+Feel free to integrate this L-System code into your Unity project for dynamic and procedural generation of tree-like structures. Adjust parameters and rules to achieve diverse and visually appealing results.
