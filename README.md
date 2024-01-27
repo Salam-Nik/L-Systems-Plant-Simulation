@@ -282,13 +282,16 @@ To interact with the L-System simulation via the command line, follow these step
 Here are visual examples of L-System plant simulations generated using Turtle Graphics in Unity:
 
 1. ![Example Image 1](insert_image_url_1)
-   - Description of the first example.
+   -             'X'=> "[F[-X+F[+FX]][*-X+F[+FX]][/-X+F[+FX]-X]]" ,
+            'F'=> "FF" 
 
 2. ![Example Image 2](insert_image_url_2)
-   - Description of the second example.
+   -              'X'=> "[FX[+F[-FX]FX][-F-FXFX]]" ,
+             'F'=> "FF" 
 
 3. ![Example Image 3](insert_image_url_3)
-   - Description of the third example.
+   -            'X'=> "[F-[X+X]+F[+FX]-X]" ,
+           'F'=> "FF" 
 
 Feel free to explore and experiment with the provided L-System code to create diverse and visually appealing tree structures in Unity.
 
