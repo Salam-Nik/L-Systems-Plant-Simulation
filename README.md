@@ -1,6 +1,6 @@
 # L-Systems-Plant-Simulation
 
-***[Table of content:]***
+***Table of content:***
 
 1.What is L-system?
 
@@ -150,7 +150,7 @@ symbol is not followed by any parameter, default values specified
 outside the L-system are used. The following list specifies the basic
 set of symbols interpreted by the turtle.
 
-![image](L-Systems-Plant-Simulation/images/image.png)
+![image](L-Systems-Plant-Simulation\images\image.png)
 
 a\) Controlling the turtle in three dimensions   b) Example of the turtle
 interpretation of a string
