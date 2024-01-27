@@ -286,49 +286,6 @@ To interact with the L-System simulation via the command line, follow these step
     generate
     ```
 
-#### 4. Unity Console Commands Integration
-
-- The Unity console commands for L-System manipulation can also be used in the Unity Editor. The provided `ConsoleCommands` script allows you to control the L-System using the Unity console.
-
-    - **Reset:**
-    ```csharp
-    reset
-    ```
-
-    - **Set Iterations:**
-    ```csharp
-    set-iterations 5
-    ```
-
-    - **Set Angle:**
-    ```csharp
-    set-angle 25.0
-    ```
-
-    - **Set Widths:**
-    ```csharp
-    set-widths 0.8
-    ```
-
-    - **Set Length:**
-    ```csharp
-    set-length 1.5
-    ```
-
-    - **Set Axiom:**
-    ```csharp
-    set-axiom X
-    ```
-
-    - **Add Rule:**
-    ```csharp
-    add-rule X "[-FX]X[+FX][+F-FX]"
-    ```
-
-    - **Generate:**
-    ```csharp
-    generate
-    ```
 
 Now you can interact with the L-System simulation both through the command line and the Unity console, providing a flexible and dynamic way to control and observe the generated tree structures.
 
