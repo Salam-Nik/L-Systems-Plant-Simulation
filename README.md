@@ -277,6 +277,10 @@ To interact with the L-System simulation via the command line, follow these step
     generate
     ```
 
+https://github.com/Salam-Nik/L-Systems-Plant-Simulation/assets/117828440/1f497504-c024-46cf-bfe2-c94f6e30ad8e
+
+
+
 ![](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example.mp4)
 ### Example Images
 
