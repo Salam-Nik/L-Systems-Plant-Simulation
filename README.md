@@ -1,6 +1,6 @@
 # L-Systems-Plant-Simulation
 
-***[Table of content:]{.underline}***
+***[Table of content:]***
 
 1.What is L-system?
 
@@ -12,7 +12,7 @@
 
 5\. Turtle Graphics
 
-6**.** Plant Growth Simulation Using Turtle Graphics
+6\. Plant Growth Simulation Using Turtle Graphics
 
 -   *Explanation of how Turtle Graphics can simulate plant
     growth*
@@ -136,7 +136,20 @@ $$\overrightarrow{H} \times \overrightarrow{L} = \overrightarrow{U}$$
 
 . Rotations of the turtle are expressed by the equation:
 
-\[$\overrightarrow{H'}\ \ \ \overrightarrow{L^{'}}\ \ \ \overrightarrow{U'\ }\rbrack = \lbrack\overrightarrow{H}\ \ \overrightarrow{L}\ \ \overrightarrow{U}\rbrack$
+$$
+\begin{bmatrix}
+\overrightarrow{H'} \\
+\overrightarrow{L'} \\
+\overrightarrow{U'}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\overrightarrow{H} \\
+\overrightarrow{L} \\
+\overrightarrow{U}
+\end{bmatrix}
+$$
+
 
 where R is a 3 $\times$ 3 rotation matrix . Changes in the turtle's
 state are caused by interpretation of specific symbols, each of which
@@ -146,55 +159,29 @@ symbol is not followed by any parameter, default values specified
 outside the L-system are used. The following list specifies the basic
 set of symbols interpreted by the turtle.
 
-![](./images/media/image1.png){width="3.53in" height="2.2in"}
+![image](L-Systems-Plant-Simulation/image.png)
 
-a\) Controlling the turtle in three dimensions b) Example of the turtle
+a\) Controlling the turtle in three dimensions   b) Example of the turtle
 interpretation of a string
 
-  -----------------------------------------------------------------------
-  **symbol**            **function**
-  --------------------- -------------------------------------------------
-  F                     move forward at distance **L** (Step Length) and
-                        draw a line
+| **Symbol** | **Function** |
+|------------|--------------|
+| F          | move forward at distance **L** (Step Length) and draw a line |
+| f          | move forward at distance **L** (Step Length) without drawing a line |
+| +          | turn left **A** (Default Angle) degrees |
+| -          | turn right **A** (Default Angle) degrees |
+| \\         | roll left **A** (Default Angle) degrees |
+| /          | roll right **A** (Default Angle) degrees |
+| ^          | pitch up **A** (Default Angle) degrees |
+| &          | pitch down **A** (Default Angle) degrees |
+| \|         | turn around 180 degrees |
+| J          | insert point at this position |
+| "          | multiply current length by **dL** (Length Scale) |
+| !          | multiply current thickness by **dT** (Thickness Scale) |
+| [          | start a branch (push turtle state) |
+| ]          | end a branch (pop turtle state) |
+| #          | increase the value of the current line width by the default width increment |
+| ;          | index of the color map to n, or increase the value of the current index by the default colour increment if no parameter is given |
+| ,          | index of the color map to n, or decrease the value of the current index by the default colour decrement if no parameter is given |
+| A,B,C,D,...| placeholders, used to nest other symbols |
 
-  f                     move forward at distance **L** (Step Length)
-                        without drawing a line
-
-  \+                    turn left **A** (Default Angle) degrees
-
-  \-                    turn right **A** (Default Angle) degrees
-
-  \\                    roll left **A** (Default Angle) degrees
-
-  /                     roll right **A** (Default Angle) degrees
-
-  \^                    pitch up **A** (Default Angle) degrees
-
-  &                     pitch down **A** (Default Angle) degrees
-
-  \|                    turn around 180 degrees
-
-  J                     insert point at this position
-
-  "                     multiply current length by **dL** (Length Scale)
-
-  !                     multiply current thickness by **dT** (Thickness
-                        Scale)
-
-  \[                    start a branch (push turtle state)
-
-  \]                    end a branch (pop turtle state)
-
-  \#                    increase the value of the current line width by
-                        the default width increment
-
-  ;                     index of the color map to n, or increase the
-                        value of the current index by the default colour
-                        increment if no parameter is given.
-
-  ,                     index of the color map to n, or decrease the
-                        value of the current index by the default colour
-                        decrement if no parameter is given.
-
-  A,B,C,D,...            placeholders, used to nest other symbols
-  -----------------------------------------------------------------------
