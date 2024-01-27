@@ -9,27 +9,18 @@
     - [Explanation of how Turtle Graphics can simulate plant growth](#explanation-of-how-turtle-graphics-can-simulate-plant-growth)
     - [Examples of plant growth simulation](#examples-of-plant-growth-simulation)
 6. [Basic Turtle Graphics Symbols and Functions](#basic-turtle-graphics-symbols-and-functions)
-
-
-***Table of content:***
-
-1.What is L-system?
-
-2.Context free L-system
-
-3.Chomsky Normal Form
-
-4\. Difference between L-system and Chomsky Normal Form
-
-5\. Turtle Graphics
-
-6\. Plant Growth Simulation Using Turtle Graphics
-
--   *Explanation of how Turtle Graphics can simulate plant
-    growth*
-
--   *Examples of plant growth
-    simulation*
+7. [Using L-System Code in Unity](#using-l-system-code-in-unity)
+    - [1. Attach the Script to GameObject](#1-attach-the-script-to-gameobject)
+    - [2. Adjust Parameters in the Unity Inspector](#2-adjust-parameters-in-the-unity-inspector)
+    - [3. Generate L-System](#3-generate-l-system)
+    - [4. Update and Reset](#4-update-and-reset)
+    - [Example Usage](#example-usage)
+8. [Using Command Line for L-System Tree Simulation](#using-command-line-for-l-system-tree-simulation)
+    - [1. Extract Build Files](#1-extract-build-files)
+    - [2. Run the Executable](#2-run-the-executable)
+    - [3. Execute Commands via Command Line](#3-execute-commands-via-command-line)
+    - [4. Unity Console Commands Integration](#4-unity-console-commands-integration)
+9. [Example Images](#example-images)
 
 **What is L-system?**
 
@@ -286,6 +277,20 @@ To interact with the L-System simulation via the command line, follow these step
     generate
     ```
 
+### Example Images
+
+Here are visual examples of L-System plant simulations generated using Turtle Graphics in Unity:
+
+1. ![Example Image 1](insert_image_url_1)
+   - Description of the first example.
+
+2. ![Example Image 2](insert_image_url_2)
+   - Description of the second example.
+
+3. ![Example Image 3](insert_image_url_3)
+   - Description of the third example.
+
+Feel free to explore and experiment with the provided L-System code to create diverse and visually appealing tree structures in Unity.
 
 Now you can interact with the L-System simulation both through the command line and the Unity console, providing a flexible and dynamic way to control and observe the generated tree structures.
 
