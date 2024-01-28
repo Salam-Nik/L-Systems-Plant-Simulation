@@ -104,6 +104,7 @@ public class LSystem : MonoBehaviour
 
             ResetTreeValues();
             state.hasResetBeenPressed = false;
+            rules = new List<LSystemRule> { };
             Generate();
    
     }

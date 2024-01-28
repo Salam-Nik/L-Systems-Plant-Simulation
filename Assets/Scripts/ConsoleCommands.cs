@@ -23,7 +23,7 @@ public class ConsoleCommands : MonoBehaviour
     {
         lSystem.SetAngle(newVal);
     }
-    [Command("add-widths")]
+    [Command("set-widths")]
     public void SetWidths(float newVal)
     {
         lSystem.SetWidths(newVal);
