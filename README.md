@@ -280,27 +280,27 @@ To interact with the L-System simulation via the command line, follow these step
 https://github.com/Salam-Nik/L-Systems-Plant-Simulation/assets/117828440/1f497504-c024-46cf-bfe2-c94f6e30ad8e
 
 
-
 ![](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example.mp4)
-### Example Images
-
-Here are visual examples of L-System plant simulations generated using Turtle Graphics in Unity:
-
-1. ![Example Image 1](insert_image_url_1)
-   -             'X'=> "[F[-X+F[+FX]][*-X+F[+FX]][/-X+F[+FX]-X]]" ,
-            'F'=> "FF" 
-
-2. ![Example Image 2](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example2.png)
-   -              'X'=> "[FX[+F[-FX]FX][-F-FXFX]]" ,
-             'F'=> "FF" 
-
-3. ![Example Image 3](insert_image_url_3)
-   -            'X'=> "[F-[X+X]+F[+FX]-X]" ,
-           'F'=> "FF" 
-
-Feel free to explore and experiment with the provided L-System code to create diverse and visually appealing tree structures in Unity.
 
 Now you can interact with the L-System simulation both through the command line and the Unity console, providing a flexible and dynamic way to control and observe the generated tree structures.
+
+
+### Example Images
+
+Here are visual examples of L-System plant simulations generated using Unity:
+
+1. ![Example Image 1](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example1.png)
+   -             'X'=> "[F[-X+F[+FX]][*-X+F[+FX]][/-X+F[+FX]-X]]" ,
+    -            'F'=> "FF" 
+
+2. ![Example Image 2](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example2.png)
+   -            'X'=> "[F-[X+X]+F[+FX]-X]" ,
+   -            'F'=> "FF" 
+
+3. ![Example Image 3](https://github.com/Salam-Nik/L-Systems-Plant-Simulation/blob/main/sample/example3.png)
+      -              'X'=> "[FX[+F[-FX]FX][-F-FXFX]]" 
+      -              'F'=> "FF" 
+
 
 This code demonstrates how to interact with the L-System during runtime, changing its parameters and updating the generated structure.
 
